@@ -8,17 +8,12 @@ export default function Hero() {
       <div className="container mx-auto flex flex-col md:flex-row items-center px-4 pt-10 w-full">
         {/* Right Side - Image + Video */}
         <div className="md:w-1/2 w-full flex items-center justify-center order-1 md:order-2">
-          <div className="relative w-full max-w-md">
-            {/* Background Image */}
-            <img
-              src={bgImage_vedio.src}
-              alt="Background Frame"
-              className="w-full h-auto object-contain md:object-cover"
-            />
-
+          <div className="w-full max-w-2xl">
+            {" "}
+            {/* ⬅️ size increased */}
             {/* Video Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center p-2 sm:p-4">
-              <div className="w-[85%] aspect-video">
+            <div className="inset-0 flex items-center justify-center">
+              <div className="w-full aspect-video">
                 <iframe
                   className="w-full h-full rounded-lg"
                   src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -31,7 +26,7 @@ export default function Hero() {
         </div>
 
         {/* Left Side - Text */}
-        <div className="md:w-1/2 w-full text-center md:text-left order-2 md:order-1 px-2 md:px-0">
+        <div className="md:w-1/2 w-full text-center md:text-left order-2 md:order-1 px-2 md:px-4 mt-2 md:mt-0">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight break-words">
             Your All-In-One <br />
             <span className="text-[#FF0013]">

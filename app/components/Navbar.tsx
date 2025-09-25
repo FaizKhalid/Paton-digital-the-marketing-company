@@ -25,12 +25,13 @@ export default function Navbar() {
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-black/95 px-6 py-6 space-y-4 text-center">
           <a
-            href="#contact"
+            href="/contact"
             className="block hover:text-orange-500"
             onClick={() => setIsOpen(false)}
           >
             Contact
           </a>
+
           <a
             href="#terms"
             className="block hover:text-orange-500"

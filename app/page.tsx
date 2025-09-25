@@ -7,6 +7,7 @@ import ComparisonSection from "./components/ComparisonSection";
 import GrowthBanner from "./components/GrowthBanner";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Footer2 from "./components/Footer2";
 import "remixicon/fonts/remixicon.css";
 
 export default function Home() {
@@ -20,7 +21,8 @@ export default function Home() {
       <ComparisonSection />
       <GrowthBanner />
       <Testimonials />
-      <Footer />
+      {/* <Footer /> */}
+      <Footer2 />
     </main>
   );
 }

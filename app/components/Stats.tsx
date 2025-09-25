@@ -2,7 +2,6 @@ import {
   RiFlashlightLine,
   RiCheckboxCircleLine,
   RiStarLine,
-  RiTeamLine, // 👈 Added for Card 3 icon
 } from "react-icons/ri";
 import bgImage_vedio from "../../public/images/stats.png";
 import React from "react";
@@ -11,8 +10,7 @@ import { DollarSign } from "lucide-react";
 const ProvenResultsSection = () => {
   return (
     <section
-      className="text-white px-4 md:px-12 relative overflow-hidden w-full min-h-screen 
-      bg-cover bg-no-repeat flex items-center justify-center py-20"
+      className=" text-white  px-4 md:px-12 relative overflow-hidden w-full md:h-screen h-full bg-cover bg-no-repeat flex items-center justify-center pt-15 pb-10 md:py-0"
       style={{
         backgroundImage: `url(${bgImage_vedio.src})`,
       }}
@@ -48,11 +46,11 @@ const ProvenResultsSection = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* Card 1 */}
           <div className="rounded-xl px-4 bg-white/10 backdrop-blur-md border border-red-500/40 shadow-lg py-10 gap-5">
             <div className="flex flex-col items-center text-center">
-              <div className="bg-[#FF0013] p-4 rounded-xl">
+              <div className="bg-[#FF0013] p-4 rounded-xl ">
                 <DollarSign className="text-2xl text-white" />
               </div>
               <div className="flex py-2 items-center justify-center">
@@ -74,22 +72,6 @@ const ProvenResultsSection = () => {
                 <span className="text-[#f99c07] font-bold text-4xl">+</span>
               </div>
               <p className="text-sm text-gray-300 mt-1">Years of Experience</p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="rounded-xl p-6 bg-white/10 backdrop-blur-md border border-red-500/40 shadow-lg py-10 gap-5">
-            <div className="flex flex-col items-center text-center">
-              <div className="bg-[#FF0013] p-4 rounded-xl">
-                <RiTeamLine className="text-2xl text-white" />{" "}
-                {/* 👈 Changed Icon */}
-              </div>
-              <div className="flex py-2">
-                <h3 className="text-4xl font-extrabold text-[#FF0013]">500</h3>
-                <span className="text-[#FF0013] font-bold text-4xl">+</span>
-              </div>
-              <p className="text-sm text-gray-300 mt-1">Team Members</p>{" "}
-              {/* 👈 Updated label */}
             </div>
           </div>
         </div>

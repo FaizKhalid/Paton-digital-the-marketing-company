@@ -2,8 +2,8 @@
 
 import { FaTimes, FaCheck, FaStar } from "react-icons/fa";
 import GradientButton from "./GradiantButton";
-
 import bgImage from "../../public/images/stats.png";
+
 const leftPoints = [
   {
     title: "Piecemeal Services",
@@ -53,7 +53,7 @@ const rightPoints = [
 export default function ComparisonSection() {
   return (
     <section
-      className=" text-white py-20 px-6 md:px-12 relative overflow-hidden bg-cover bg-no-repeat"
+      className="text-white py-20 px-6 md:px-12 relative overflow-hidden bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url(${bgImage.src})`,
       }}
@@ -71,9 +71,9 @@ export default function ComparisonSection() {
       </div>
 
       {/* Cards */}
-      <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-12 md:mx-10">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-12 w-full">
         {/* Left Card */}
-        <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-red-600 shadow-lg">
+        <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-red-600 shadow-lg w-full">
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-neutral-700 p-4 rounded-lg">
               <FaStar className="border-red text-lg" />
@@ -94,7 +94,7 @@ export default function ComparisonSection() {
         </div>
 
         {/* Right Card */}
-        <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-blue-500/50 shadow-lg">
+        <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-blue-500/50 shadow-lg w-full">
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-[#FF0013] p-4 rounded-lg">
               <FaStar className="text-white text-lg" />
